@@ -1,4 +1,5 @@
 class Article < ActiveRecord::Base
+    has_rich_text :description
     belongs_to :user
     belongs_to :category
     validates :title, presence: true, length: { minimum: 3, maximum: 50 }

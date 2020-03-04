@@ -1,6 +1,7 @@
 $navbar-default-bg: black;
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "./actiontext.scss";
 #logo {
  float: left;
  font-size: 1.7em;
@@ -41,3 +42,4 @@ $navbar-default-bg: black;
 .margin-7{
    margin-top:7px;
    }
+

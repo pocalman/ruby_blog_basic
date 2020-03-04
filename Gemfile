@@ -63,5 +63,4 @@ gem 'will_paginate'
 
 gem 'bootstrap-will_paginate'
 
-gem 'ckeditor', github: 'galetahub/ckeditor'
-
+gem 'shrine'

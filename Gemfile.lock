@@ -1,10 +1,3 @@
-GIT
-  remote: https://github.com/galetahub/ckeditor.git
-  revision: bfe47345606e5dc977f8928d9d9db207232671d6
-  specs:
-    ckeditor (5.0.0)
-      orm_adapter (~> 0.5.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -88,7 +81,10 @@ GEM
       xpath (~> 3.2)
     childprocess (3.0.0)
     concurrent-ruby (1.1.6)
+    content_disposition (1.0.0)
     crass (1.0.6)
+    down (5.1.1)
+      addressable (~> 2.5)
     erubi (1.9.0)
     execjs (2.7.0)
     ffi (1.12.2-x64-mingw32)
@@ -130,7 +126,6 @@ GEM
     nio4r (2.5.2)
     nokogiri (1.10.8-x64-mingw32)
       mini_portile2 (~> 2.4.0)
-    orm_adapter (0.5.0)
     public_suffix (4.0.3)
     puma (4.3.1)
       nio4r (~> 2.0)
@@ -181,6 +176,9 @@ GEM
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
+    shrine (3.2.1)
+      content_disposition (~> 1.0)
+      down (~> 5.1)
     sprockets (4.0.0)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -230,7 +228,6 @@ DEPENDENCIES
   bootstrap-will_paginate
   byebug
   capybara (>= 2.15)
-  ckeditor!
   jbuilder (~> 2.7)
   jquery-rails
   kaminari
@@ -239,6 +236,7 @@ DEPENDENCIES
   sass-rails (>= 6)
   sassc-rails
   selenium-webdriver
+  shrine
   sqlite3 (~> 1.4)
   turbolinks (~> 5)
   tzinfo-data
